@@ -49,3 +49,34 @@ let second =  document.getElementById('seconds');
       document.getElementById("demo").innerHTML = "EXPIRED";
     }
   }, 1000);
+
+  // image changer
+
+  let image = document.querySelectorAll('#change');
+  let bloodpressure = document.getElementById('bloodpressure');
+  let facemask  = document.getElementById('facemask');
+  let stomatology  = document.getElementById('stomatology')
+
+  bloodpressure.addEventListener('click',()=>{
+    image.forEach((e)=>{
+      e.setAttribute('src',"https://cdn.shopify.com/s/files/1/0430/9811/2168/products/products-13_b2b56675-4e72-419a-86e9-ce2508ac87ab_540x.png?v=1595387449")
+    })
+  
+  })
+
+  facemask.addEventListener('click',()=>{
+    image.forEach((e)=>{
+      e.setAttribute('src',"https://cdn.shopify.com/s/files/1/0430/9811/2168/products/products-5_540x.png?v=1595387038")
+    })
+  })
+
+  stomatology.addEventListener('click',()=>{
+    image.forEach((e)=>{
+      e.setAttribute('src',"https://cdn.shopify.com/s/files/1/0430/9811/2168/products/products-1_8f50f07e-31ce-4cbb-ba52-806645c3400d_360x.png?v=1597911474")
+    })
+  })
+
+
+
+  
+

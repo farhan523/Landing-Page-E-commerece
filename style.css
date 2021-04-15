@@ -671,6 +671,38 @@ strike {
   margin-left: 0;
 }
 
+/* js scrollbar */
+
+.jsheader {
+  margin-top: 70px;
+  width: 100vw;
+  height: 150px;
+  text-align: center;
+}
+
+.jsheader h1 {
+  font-size: 4rem;
+  color: #103178;
+}
+
+.jsheader div {
+  display: flex;
+  width: 30%;
+  margin: auto;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.jsheader h3 {
+  font-size: 2rem;
+  color: #103178;
+}
+
+.jsheader h3:hover {
+  border-bottom: 2px solid #103178;
+  transition: 0.2s ease;
+}
+
 /* media-query */
 
 @media (max-width: 780px) {
@@ -945,5 +977,16 @@ strike {
     display: block;
     white-space: no;
     /* border: 2px solid red; */
+  }
+
+  /* js scrollbar */
+
+  .jsheader div {
+    width: 90%;
+  }
+
+  .jsheader {
+    height: 100px;
+    margin-top: 50px;
   }
 }
